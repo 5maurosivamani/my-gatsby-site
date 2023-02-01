@@ -1,41 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap");
 
-.layout{
-    
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
+.layout {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
 }
 
+.layout-title {
+  background-color: blueviolet;
 
-.mainContent{
-    padding: 5rem 10rem;
-    background-color: blueviolet;
 }
-.nav{
-    background-color: #fff;
-}
-
-.navList{
-    list-style: none;
-    background-color: #fff;
-    padding: 1rem 3rem;
+.layout-title h1{
+    font-size: 3rem;
+    color: gray;
+    font-weight: 700;
 }
 
-.navList li{
-    display: inline-block;
-    padding-right: 1rem;
+.mainContent {
+  padding: 5rem 10rem;
+  background-color: blueviolet;
+}
+.nav {
+  background-color: #fff;
 }
 
-.navList li a{
-    padding: 0.5rem 0;
-    color: rgb(171, 3, 177);
+.navList {
+  list-style: none;
+  background-color: #fff;
+  padding: 1rem 3rem;
 }
 
-.footer p{
-    color: rgb(171, 3, 177);
-    text-align: center; 
-    padding: 2rem;
+.navList li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.navList li a {
+  padding: 0.5rem 0;
+  color: rgb(171, 3, 177);
+}
+
+.footer p {
+  color: rgb(171, 3, 177);
+  text-align: center;
+  padding: 2rem;
 }

@@ -1,5 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
@@ -9,11 +11,6 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => (
-  <>
-    <title>Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </>
-);
+export const Head = () => <Seo title="Home" />
 
 export default IndexPage;

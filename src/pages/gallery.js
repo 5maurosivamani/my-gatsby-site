@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import MyComponent from "../components/my-component";
 import { StaticImage } from "gatsby-plugin-image";
+import Seo from "../components/seo";
 
 const Frame = ({ children }) => {
   return <div style={styles.frame}>{children}</div>;
@@ -28,7 +29,7 @@ const GalleryPage = () => {
   );
 };
 
-export const Head = () => <title>Gallery</title>;
+export const Head = () => <Seo title="gallery" />;
 
 export default GalleryPage;
 
@@ -40,6 +41,5 @@ const styles = {
   image:{
     width:"50%",
     backgroundSize:"cover",
-
   }
 };
