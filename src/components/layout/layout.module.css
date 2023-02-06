@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700;900&display=swap");
 
+:root {
+  --primary-color: rgb(27, 27, 27);
+}
+
 .layout {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
   color: #fff;
   font-family: "Raleway", sans-serif;
+  min-height: 100vh;
 }
 
 .layout-title {
-  background-color: blueviolet;
+  background-color: var(--primary-color);
+}
+.layout-title h1 {
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+}
 
-}
-.layout-title h1{
-    font-size: 3rem;
-    color: gray;
-    font-weight: 700;
-}
+
 
 .mainContent {
-  padding: 5rem 10rem;
-  background-color: blueviolet;
+  padding: 5rem 0;
+  background-color: var(--primary-color);
+  min-height: calc(100vh - calc(114px + 88px +56px));
 }
 .nav {
   background-color: #fff;
@@ -30,20 +36,53 @@
   list-style: none;
   background-color: #fff;
   padding: 1rem 3rem;
+  margin-bottom: 0;
 }
 
 .navList li {
   display: inline-block;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 .navList li a {
   padding: 0.5rem 0;
-  color: rgb(171, 3, 177);
+  color: var(--primary-color);
+  text-underline-offset: 5px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navList li a:hover::after {
+  visibility: visible;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.navList li a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.navList li a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgb(202, 202, 202);
+  left: 0;
+  bottom: 0;
 }
 
 .footer p {
-  color: rgb(171, 3, 177);
+  color: var(--primary-color);
+
   text-align: center;
   padding: 2rem;
 }
